@@ -4,5 +4,5 @@ using UnityEngine;
 
 public enum CommonDefine
 {
-    UIMAIN_POWER_BAR,
+
 }
