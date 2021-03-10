@@ -11,6 +11,8 @@ public class Main : MBSingleton<Main>
 
         this.InitUI();
         TUIManager.GetSingleton().OpenUI("UIMain");
+
+        AudioManager.GetSingleton().Init();
     }
 
     // Update is called once per frame
