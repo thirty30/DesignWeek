@@ -1827,9 +1827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soupInventory: 2
   meterDecreaseSpeed: 0.02
-  meter1Value: 0
-  meter2Value: 0
-  meter3Value: 0
+  meterValues: []
 --- !u!4 &1824865043
 Transform:
   m_ObjectHideFlags: 0
@@ -2394,7 +2392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureID: 1
-  rechargeValue: 0.5
+  rechargeValue: 0.2
 --- !u!61 &2021631893
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2591,8 +2589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45bd150cc83d7be4b953b80aaf4338a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  furnitureID: 1
-  rechargeValue: 0.5
+  furnitureID: 0
+  rechargeValue: 0.3
 --- !u!61 &2064562921
 BoxCollider2D:
   m_ObjectHideFlags: 0

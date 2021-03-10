@@ -10,6 +10,7 @@ public class stageInteraction : MonoBehaviour
 
     public void RechargeMeter()
     {
-        GlobalEvent.Dispatch(CommonDefine.UIMAIN_POWER_BAR, furnitureID, rechargeValue);
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().RechargeMeter(furnitureID, rechargeValue);
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().UpdateMeterValues();
     }
 }
