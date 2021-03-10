@@ -21,5 +21,6 @@ public class Main : MBSingleton<Main>
     {
         TUIManager.GetSingleton().Initialize();
         TUIManager.GetSingleton().RegisterUI("UI/", "UIMain");
+        TUIManager.GetSingleton().RegisterUI("UI/", "UIPopTips");
     }
 }
