@@ -6,6 +6,8 @@ public class GridMovement : MonoBehaviour
 {
     public float moveSpeed;
     public float moveDistance;
+    public LayerMask obstacle;
+
     [SerializeField]
     private bool isLookingLeft;
     [SerializeField]
@@ -28,6 +30,12 @@ public class GridMovement : MonoBehaviour
                 this.GetComponent<Animator>().SetFloat("speed", 0);
             }
         }
+        else if (!isMoving && this.GetComponent<Animator>().GetFloat("speed") > 0)
+        {
+            this.GetComponent<Animator>().SetFloat("speed", 0);
+        }
+
+
 
         if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f && !isMoving)
         {
@@ -43,7 +51,16 @@ public class GridMovement : MonoBehaviour
 
     void SetNewMoveLocation()
     {
-        moveToPoint = new Vector2(transform.position.x + Input.GetAxisRaw("Horizontal")*moveDistance, transform.position.y + Input.GetAxisRaw("Vertical")*moveDistance);
-        isMoving = true;
+        moveToPoint = new Vector2(transform.position.x + Input.GetAxisRaw("Horizontal") * moveDistance, transform.position.y + Input.GetAxisRaw("Vertical") * moveDistance);
+
+        if (!Physics2D.OverlapCircle(moveToPoint, 0.2f, obstacle))
+        {
+            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
+            this.GetComponent<Animator>().SetFloat("speed", 0);
+        }
     }
 }
