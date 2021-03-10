@@ -14,5 +14,31 @@ public class UIMain : TUIBasePage
         this.Slider1.value = 1;
         this.Slider2.value = 1;
         this.Slider3.value = 1;
+
+        GlobalEvent.Add(CommonDefine.UIMAIN_POWER_BAR, this.ModifyValueOfSlider);
+    }
+
+    public override void OnDestroy()
+    {
+        GlobalEvent.RemoveEvent(CommonDefine.UIMAIN_POWER_BAR);
+    }
+
+    private void ModifyValueOfSlider(params object[] parms)
+    {
+        int idx = (int)parms[0];
+        float offset = (float)parms[1];
+
+        if (idx == 1)
+        {
+            this.Slider1.value += offset;
+        }
+        else if (idx == 2)
+        {
+            this.Slider2.value += offset;
+        }
+        else if (idx == 1)
+        {
+            this.Slider2.value += offset;
+        }
     }
 }
