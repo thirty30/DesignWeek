@@ -41,6 +41,18 @@ public class GridMovement : MonoBehaviour
         {
             SetNewMoveLocation();
             this.GetComponent<Animator>().SetFloat("speed", Mathf.Abs(Input.GetAxis("Horizontal")));
+
+            if (Input.GetAxisRaw("Horizontal") < 0 && !isLookingLeft)
+            {
+                isLookingLeft = true;
+                GetComponent<SpriteRenderer>().flipX = true;
+            }
+            else if (Input.GetAxisRaw("Horizontal") > 0 && isLookingLeft)
+            {
+                isLookingLeft = false;
+                GetComponent<SpriteRenderer>().flipX = false;
+            }
+            
         }
         if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f && !isMoving)
         {
