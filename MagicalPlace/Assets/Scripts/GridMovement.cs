@@ -25,6 +25,7 @@ public class GridMovement : MonoBehaviour
 
         if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f && !isMoving)
         {
+            this.GetComponent<Animator>().SetFloat("speed", Input.GetAxis("Horizontal"));
             SetNewMoveLocation();
         }
         if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f && !isMoving)
