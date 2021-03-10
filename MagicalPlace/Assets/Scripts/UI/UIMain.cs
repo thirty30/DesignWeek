@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class UIMain : TUIBasePage
 {
     public List<Slider> SliderAttributs;
+    public Text TextSoupCount;
 
     public override void OnInitialize(params object[] parms)
     {
@@ -22,5 +23,6 @@ public class UIMain : TUIBasePage
         {
             this.SliderAttributs[i].value = Attr[i];
         }
+        this.TextSoupCount.text = "x" + Player.GetSingleton().SoupCount.ToString();
     }
 }
