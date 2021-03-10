@@ -7,9 +7,9 @@ public class meterManager : MonoBehaviour
     public float soupInventory;
     public float meterDecreaseSpeed;
 
-    //public float meter1Value; 
-    //public float meter2Value; 
-    //public float meter3Value; 
+    public float meter1Value;
+    public float meter2Value;
+    public float meter3Value;
 
     void Start()
     {

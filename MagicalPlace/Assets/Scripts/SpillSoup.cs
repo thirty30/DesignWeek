@@ -8,8 +8,8 @@ public class SpillSoup : MonoBehaviour
     public float timerMax;
     public LayerMask kitchenTile;
 
-    [SerializeField]
-    private bool inKitchen;
+    //[SerializeField]
+    //private bool inKitchen;
 
     [SerializeField]
     private bool isRecharging = false;
@@ -22,13 +22,17 @@ public class SpillSoup : MonoBehaviour
         {
             if (Physics2D.OverlapCircle(transform.position, 0.3f, kitchenTile))
             {
-                inKitchen = true;
+                //inKitchen = true;
                 RestoreSoup();
             }
             else
             {
-                inKitchen = false;
-                CreateSoup();
+                if (GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().soupInventory > 0)
+                {
+                    GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().soupInventory--;
+                    //inKitchen = false;
+                    CreateSoup();
+                }
             }
         }
 
