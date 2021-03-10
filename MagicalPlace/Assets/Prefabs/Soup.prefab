@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2122839523547422671}
   - component: {fileID: 2122839523547422670}
   - component: {fileID: 2122839523547422657}
+  - component: {fileID: -1032119649118670747}
   m_Layer: 0
   m_Name: Soup
   m_TagString: Player
@@ -112,3 +113,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DestroyDelay: 1
+--- !u!114 &-1032119649118670747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122839523547422669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a8e8006e918da48b677ffa6b86b1cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soupRadius: 1
