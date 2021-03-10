@@ -7,6 +7,8 @@ public class Main : MBSingleton<Main>
     // Start is called before the first frame update
     void Start()
     {
+        Player.GetSingleton().Init();
+
         this.InitUI();
         TUIManager.GetSingleton().OpenUI("UIMain");
     }
