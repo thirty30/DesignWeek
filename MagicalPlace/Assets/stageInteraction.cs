@@ -6,10 +6,18 @@ public class stageInteraction : MonoBehaviour
 {
     public int furnitureID;
     public float rechargeValue;
+    public Sprite deathSprite;
 
 
     public void RechargeMeter()
     {
-        GlobalEvent.Dispatch(CommonDefine.UIMAIN_POWER_BAR, furnitureID, rechargeValue);
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().RechargeMeter(furnitureID, rechargeValue);
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().UpdateMeterValues();
+    }
+
+    public void InteractionDeath()
+    {
+        GetComponent<SpriteRenderer>().sprite = deathSprite;
+        gameObject.tag = "Untagged";
     }
 }
