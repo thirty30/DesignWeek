@@ -2178,6 +2178,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soup: {fileID: 2122839523547422669, guid: 8b4c071e5478be64c833b5a83188c600, type: 3}
   timerMax: 2
+  kitchenTile:
+    serializedVersion: 2
+    m_Bits: 0
+  isRecharging: 0
 --- !u!1 &2015396409
 GameObject:
   m_ObjectHideFlags: 0
@@ -2389,7 +2393,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   furnitureID: 1
   rechargeValue: 0.2
-  isDead: 0
   deathSprite: {fileID: -6205172343615221245, guid: 67532712b2536e04996ec74d1e9988de,
     type: 3}
 --- !u!61 &2021631893
@@ -2590,7 +2593,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   furnitureID: 0
   rechargeValue: 0.3
-  isDead: 0
   deathSprite: {fileID: 3048538982666575687, guid: 67532712b2536e04996ec74d1e9988de,
     type: 3}
 --- !u!61 &2064562921
