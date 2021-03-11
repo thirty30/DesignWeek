@@ -905,7 +905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureID: 3
-  rechargeValue: 0.4
+  rechargeValue: 0.45
   deathSprite: {fileID: -2426843357703420916, guid: 67532712b2536e04996ec74d1e9988de,
     type: 3}
 --- !u!212 &416427753
@@ -2186,7 +2186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureID: 1
-  rechargeValue: 0.1
+  rechargeValue: 0.25
   deathSprite: {fileID: -2426843357703420916, guid: 67532712b2536e04996ec74d1e9988de,
     type: 3}
 --- !u!212 &903805775
@@ -3697,7 +3697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureID: 2
-  rechargeValue: 0.1
+  rechargeValue: 0.25
   deathSprite: {fileID: -2426843357703420916, guid: 67532712b2536e04996ec74d1e9988de,
     type: 3}
 --- !u!212 &1251066523
@@ -5567,7 +5567,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soupInventory: 2
-  meterDecreaseSpeed: 0.02
+  meterDecreaseSpeed: 0.03
+  meterDecreaseAccel: 0.02
   meterValues: []
 --- !u!4 &1824865043
 Transform:
@@ -6651,7 +6652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureID: 0
-  rechargeValue: 0.2
+  rechargeValue: 0.35
   deathSprite: {fileID: -2426843357703420916, guid: 67532712b2536e04996ec74d1e9988de,
     type: 3}
 --- !u!212 &2021631894

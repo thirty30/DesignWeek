@@ -6,7 +6,7 @@ public class meterManager : MonoBehaviour
 {
     public int soupInventory;
     public float meterDecreaseSpeed;
-
+    public float meterDecreaseAccel;
 
     public List<float> meterValues = new List<float>();
 
@@ -28,7 +28,7 @@ public class meterManager : MonoBehaviour
         for (int i = 0; i < 4; i++)
         {
             if (meterValues[i] > 0)
-                meterValues[i] -= meterDecreaseSpeed * Time.deltaTime;
+                meterValues[i] -= meterDecreaseSpeed * Time.deltaTime ;
         }
 
         UpdateMeterValues();
@@ -47,6 +47,7 @@ public class meterManager : MonoBehaviour
                     if (furnishing.GetComponent<stageInteraction>().furnitureID == i)
                     {
                         furnishing.GetComponent<stageInteraction>().InteractionDeath();
+                        meterDecreaseSpeed += meterDecreaseAccel;
                     }
                 }
             }
