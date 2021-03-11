@@ -6,13 +6,11 @@ public class GridMovement : MonoBehaviour
 {
     public float moveSpeed;
     public float moveDistance;
-    public LayerMask obstacle;
+    public LayerMask obstacleLayer;
 
-    [SerializeField]
+
     private bool isLookingLeft;
-    [SerializeField]
     private Vector2 moveToPoint;
-    [SerializeField]
     private bool isMoving;
 
 
@@ -65,7 +63,7 @@ public class GridMovement : MonoBehaviour
     {
         moveToPoint = new Vector2(transform.position.x + Input.GetAxisRaw("Horizontal") * moveDistance, transform.position.y + Input.GetAxisRaw("Vertical") * moveDistance);
 
-        if (!Physics2D.OverlapCircle(moveToPoint, 0.2f, obstacle))
+        if (!Physics2D.OverlapCircle(moveToPoint, 0.2f, obstacleLayer))
         {
             isMoving = true;
         }
