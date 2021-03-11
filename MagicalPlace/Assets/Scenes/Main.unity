@@ -1827,9 +1827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soupInventory: 2
   meterDecreaseSpeed: 0.02
-  meter1Value: 0
-  meter2Value: 0
-  meter3Value: 0
+  meterValues: []
 --- !u!4 &1824865043
 Transform:
   m_ObjectHideFlags: 0
@@ -2394,7 +2392,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furnitureID: 1
-  rechargeValue: 0.5
+  rechargeValue: 0.2
+  isDead: 0
+  deathSprite: {fileID: -6205172343615221245, guid: 67532712b2536e04996ec74d1e9988de,
+    type: 3}
 --- !u!61 &2021631893
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2573,7 +2574,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064562918}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.45, y: 2.48, z: -0.09}
+  m_LocalPosition: {x: -6.35, y: 2.48, z: -0.09}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1802234094}
@@ -2591,8 +2592,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45bd150cc83d7be4b953b80aaf4338a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  furnitureID: 1
-  rechargeValue: 0.5
+  furnitureID: 0
+  rechargeValue: 0.3
+  isDead: 0
+  deathSprite: {fileID: 3048538982666575687, guid: 67532712b2536e04996ec74d1e9988de,
+    type: 3}
 --- !u!61 &2064562921
 BoxCollider2D:
   m_ObjectHideFlags: 0
