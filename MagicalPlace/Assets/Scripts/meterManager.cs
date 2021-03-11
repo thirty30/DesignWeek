@@ -1,12 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class meterManager : MonoBehaviour
 {
     public int soupInventory;
     public float meterDecreaseSpeed;
     public float meterDecreaseAccel;
+
+    public float gameTimerMax;
+    public GameObject timerText;
+    public GameObject endText;
+    private float timer;
+    private float timerSeconds;
+    private int deaths;
+    private bool gameActive = true;
+
+
 
     public List<float> meterValues = new List<float>();
 
@@ -25,14 +36,55 @@ public class meterManager : MonoBehaviour
 
     void Update()
     {
+        if (gameActive)
+        {
+            timer++;
+            if (timer % 60 == 0)
+            {
+                timerSeconds++;
+                TimerTextUpdate();
+            }
+
+            if (timerSeconds > gameTimerMax)
+            {
+                timerSeconds = 0;
+                gameActive = false;
+                TimerTextUpdate();
+            }
+        }
+
+
+
         for (int i = 0; i < 4; i++)
         {
             if (meterValues[i] > 0)
-                meterValues[i] -= meterDecreaseSpeed * Time.deltaTime ;
+                meterValues[i] -= meterDecreaseSpeed * Time.deltaTime;
         }
 
-        UpdateMeterValues();
+        UpdateMeterValues();     
     }
+
+
+    void TimerTextUpdate()
+    {
+        timerText.GetComponent<Text>().text = ("" + timerSeconds + " / " + gameTimerMax);
+
+        if (!gameActive)
+        {
+            timerText.SetActive(false);
+            endText.SetActive(true);
+            endText.GetComponent<Text>().text = ("Very Cool");
+        }
+    }
+
+    void LoseGame()
+    {
+        gameActive = false;
+        timerText.SetActive(false);
+        endText.SetActive(true);
+        endText.GetComponent<Text>().text = ("Not very cool >:(");
+    }
+
 
 
     public void UpdateMeterValues()
@@ -48,6 +100,11 @@ public class meterManager : MonoBehaviour
                     {
                         furnishing.GetComponent<stageInteraction>().InteractionDeath();
                         meterDecreaseSpeed += meterDecreaseAccel;
+                        deaths++;
+                        if (deaths >= 4)
+                        {
+                            LoseGame();
+                        }
                     }
                 }
             }
