@@ -22,6 +22,7 @@ public class SpillSoup : MonoBehaviour
             if (Physics2D.OverlapCircle(transform.position, 0.3f, kitchenLayer))
             {
                 RestoreSoup();
+                this.GetComponent<Animator>().SetBool("fillSoup", true);
                 GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().UpdateSoup();
             }
             else
@@ -30,6 +31,7 @@ public class SpillSoup : MonoBehaviour
                 {
                     GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().soupInventory--;
                     GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().UpdateSoup();
+                    this.GetComponent<Animator>().SetBool("pourSoup", true);
                     CreateSoup();
                 }
             }
@@ -44,6 +46,8 @@ public class SpillSoup : MonoBehaviour
                 timerSeconds++;
             if (timerSeconds >= timerMax)
             {
+                this.GetComponent<Animator>().SetBool("fillSoup", false);
+                this.GetComponent<Animator>().SetBool("pourSoup", false);
                 isRecharging = false;
                 timerSeconds = 0;
             }
