@@ -13,15 +13,18 @@ public class SpillSoup : MonoBehaviour
     [SerializeField]
     private bool isRecharging = false;
     private float timer;
-    private float timerSeconds;
+    private float timerStep;
     
     void Update()
     {
         if (Mathf.Abs(Input.GetAxisRaw("Jump")) == 1 && !isRecharging)
         {
+
             if (Physics2D.OverlapCircle(transform.position, 0.3f, kitchenLayer))
             {
                 RestoreSoup();
+                GetComponent<GridMovement>().isRecharging = true;
+                this.GetComponent<Animator>().SetBool("fillSoup", true);
                 GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().UpdateSoup();
             }
             else
@@ -30,22 +33,27 @@ public class SpillSoup : MonoBehaviour
                 {
                     GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().soupInventory--;
                     GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().UpdateSoup();
+                    this.GetComponent<Animator>().SetBool("pourSoup", true);
+                    GetComponent<GridMovement>().isRecharging = true;
                     CreateSoup();
                 }
             }
         }
+    }
 
-
+    void FixedUpdate()
+    {
         //timer until soup can be dumped or recharged again
         if (isRecharging)
         {
-            timer++;
-            if (timer % 60 == 0)
-                timerSeconds++;
-            if (timerSeconds >= timerMax)
+            timer+= Time.deltaTime;
+            if (timer >= timerMax)
             {
+                this.GetComponent<Animator>().SetBool("fillSoup", false);
+                this.GetComponent<Animator>().SetBool("pourSoup", false);
+                GetComponent<GridMovement>().isRecharging = false;
                 isRecharging = false;
-                timerSeconds = 0;
+                timer = 0;
             }
         }
     }

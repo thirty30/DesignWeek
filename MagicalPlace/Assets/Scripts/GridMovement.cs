@@ -7,6 +7,7 @@ public class GridMovement : MonoBehaviour
     public float moveSpeed;
     public float moveDistance;
     public LayerMask obstacleLayer;
+    public bool isRecharging;
 
 
     private bool isLookingLeft;
@@ -35,7 +36,7 @@ public class GridMovement : MonoBehaviour
 
 
 
-        if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f && !isMoving)
+        if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f && !isMoving && !isRecharging)
         {
             SetNewMoveLocation();
             this.GetComponent<Animator>().SetFloat("speed", Mathf.Abs(Input.GetAxis("Horizontal")));
@@ -52,7 +53,7 @@ public class GridMovement : MonoBehaviour
             }
             
         }
-        if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f && !isMoving)
+        if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f && !isMoving && !isRecharging)
         {
             SetNewMoveLocation();
             this.GetComponent<Animator>().SetFloat("speed", Mathf.Abs(Input.GetAxis("Vertical")));
