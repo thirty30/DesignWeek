@@ -2179,7 +2179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soup: {fileID: 2122839523547422669, guid: 8b4c071e5478be64c833b5a83188c600, type: 3}
-  timerMax: 1.5
+  timerMax: 1
   kitchenLayer:
     serializedVersion: 2
     m_Bits: 512

@@ -46,16 +46,14 @@ public class SpillSoup : MonoBehaviour
         //timer until soup can be dumped or recharged again
         if (isRecharging)
         {
-            timer++;
-            if (timer % 15 == 0)
-                timerStep++;
-            if (timerStep >= timerMax*2)
+            timer+= Time.deltaTime;
+            if (timer >= timerMax)
             {
                 this.GetComponent<Animator>().SetBool("fillSoup", false);
                 this.GetComponent<Animator>().SetBool("pourSoup", false);
                 GetComponent<GridMovement>().isRecharging = false;
                 isRecharging = false;
-                timerStep = 0;
+                timer = 0;
             }
         }
     }
