@@ -6,7 +6,7 @@ public class SpillSoup : MonoBehaviour
 {
     public GameObject soup;
     public float timerMax;
-    public LayerMask kitchenTile;
+    public LayerMask kitchenLayer;
 
 
 
@@ -19,7 +19,7 @@ public class SpillSoup : MonoBehaviour
     {
         if (Mathf.Abs(Input.GetAxisRaw("Jump")) == 1 && !isRecharging)
         {
-            if (Physics2D.OverlapCircle(transform.position, 0.3f, kitchenTile))
+            if (Physics2D.OverlapCircle(transform.position, 0.3f, kitchenLayer))
             {
                 RestoreSoup();
                 GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().UpdateSoup();
@@ -41,10 +41,7 @@ public class SpillSoup : MonoBehaviour
         {
             timer++;
             if (timer % 60 == 0)
-            {
                 timerSeconds++;
-            }
-
             if (timerSeconds >= timerMax)
             {
                 isRecharging = false;

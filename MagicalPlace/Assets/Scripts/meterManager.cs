@@ -67,22 +67,22 @@ public class meterManager : MonoBehaviour
 
     void TimerTextUpdate()
     {
-        timerText.GetComponent<Text>().text = ("" + timerSeconds + " / " + gameTimerMax);
+        //timerText.GetComponent<Text>().text = ("" + timerSeconds + " / " + gameTimerMax);
 
-        if (!gameActive)
-        {
-            timerText.SetActive(false);
-            endText.SetActive(true);
-            endText.GetComponent<Text>().text = ("Very Cool");
-        }
+        //if (!gameActive)
+        //{
+        //    timerText.SetActive(false);
+        //    endText.SetActive(true);
+        //    endText.GetComponent<Text>().text = ("Very Cool");
+        //}
     }
 
     void LoseGame()
     {
-        gameActive = false;
-        timerText.SetActive(false);
-        endText.SetActive(true);
-        endText.GetComponent<Text>().text = ("Not very cool >:(");
+        //gameActive = false;
+        //timerText.SetActive(false);
+        //endText.SetActive(true);
+        //endText.GetComponent<Text>().text = ("Not very cool >:(");
     }
 
 
@@ -99,7 +99,9 @@ public class meterManager : MonoBehaviour
                     if (furnishing.GetComponent<stageInteraction>().furnitureID == i)
                     {
                         furnishing.GetComponent<stageInteraction>().InteractionDeath();
-                        meterDecreaseSpeed += meterDecreaseAccel;
+
+                        //meter acceleration
+                        //meterDecreaseSpeed += meterDecreaseAccel;
                         deaths++;
                         if (deaths >= 4)
                         {

@@ -1887,7 +1887,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &838328810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6578,14 +6578,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48aa86071584f8d45b9ac6834e8e38b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 10
   moveDistance: 2.5
-  obstacle:
+  obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
-  isLookingLeft: 0
-  moveToPoint: {x: 0, y: 0}
-  isMoving: 0
 --- !u!114 &2013037792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6599,8 +6596,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soup: {fileID: 2122839523547422669, guid: 8b4c071e5478be64c833b5a83188c600, type: 3}
-  timerMax: 2
-  kitchenTile:
+  timerMax: 1
+  kitchenLayer:
     serializedVersion: 2
     m_Bits: 512
   isRecharging: 0
