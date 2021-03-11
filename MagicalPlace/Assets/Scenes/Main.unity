@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1827,6 +1827,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soupInventory: 2
   meterDecreaseSpeed: 0.02
+  meterDecreaseAccel: 0
+  gameTimerMax: 0
+  timerText: {fileID: 0}
+  endText: {fileID: 0}
   meterValues: []
 --- !u!4 &1824865043
 Transform:
@@ -2108,7 +2112,7 @@ SpriteRenderer:
   m_Size: {x: 5.62, y: 5.128799}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!95 &2013037789
@@ -2156,14 +2160,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48aa86071584f8d45b9ac6834e8e38b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 10
   moveDistance: 2.5
-  obstacle:
+  obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
-  isLookingLeft: 0
-  moveToPoint: {x: 0, y: 0}
-  isMoving: 0
 --- !u!114 &2013037792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2177,10 +2178,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soup: {fileID: 2122839523547422669, guid: 8b4c071e5478be64c833b5a83188c600, type: 3}
-  timerMax: 2
-  kitchenTile:
+  timerMax: 1
+  kitchenLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   isRecharging: 0
 --- !u!1 &2015396409
 GameObject:
