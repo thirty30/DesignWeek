@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2089263475590386423}
   - component: {fileID: 2089263475590386422}
   - component: {fileID: 2089263475590386421}
+  - component: {fileID: -2686566111060585081}
   m_Layer: 0
   m_Name: Bed1_0
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,3 +102,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-2686566111060585081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089263475590386420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45bd150cc83d7be4b953b80aaf4338a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furnitureID: 0
+  rechargeValue: 0.3
+  deathSprite: {fileID: 21300000, guid: b631b09856cf4764297fb15c1e059a7a, type: 3}

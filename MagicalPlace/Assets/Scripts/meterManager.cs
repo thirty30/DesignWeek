@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class meterManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class meterManager : MonoBehaviour
     public float gameTimerMax;
     public GameObject timerText;
     public GameObject endText;
+    public GameObject globalUI;
+    public GameObject player;
     private float timer;
     private float timerSeconds;
     private int deaths;
@@ -23,6 +26,8 @@ public class meterManager : MonoBehaviour
 
     private void Awake()
     {
+        player.SetActive(true);
+        globalUI.SetActive(true);
         for (int i = 0; i < 4; i++)
         {
             meterValues.Add(1);
@@ -31,10 +36,11 @@ public class meterManager : MonoBehaviour
 
     private void Start()
     {
+        TimerTextUpdate();
         UpdateSoup();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (gameActive)
         {
@@ -67,22 +73,27 @@ public class meterManager : MonoBehaviour
 
     void TimerTextUpdate()
     {
-        //timerText.GetComponent<Text>().text = ("" + timerSeconds + " / " + gameTimerMax);
+        timerText.GetComponent<Text>().text = ("" + timerSeconds + " / " + gameTimerMax);
 
-        //if (!gameActive)
-        //{
-        //    timerText.SetActive(false);
-        //    endText.SetActive(true);
-        //    endText.GetComponent<Text>().text = ("Very Cool");
-        //}
+        if (!gameActive)
+        {
+            timerText.SetActive(false);
+            //endText.SetActive(true);
+            //endText.GetComponent<Text>().text = ("Very Cool");
+            
+            SceneManager.LoadScene("WinScene");
+        }
     }
 
     void LoseGame()
     {
-        //gameActive = false;
-        //timerText.SetActive(false);
+        gameActive = false;
+        timerText.SetActive(false);
         //endText.SetActive(true);
         //endText.GetComponent<Text>().text = ("Not very cool >:(");
+        player.SetActive(false);
+        globalUI.SetActive(false);
+        SceneManager.LoadScene("WinScene");
     }
 
 

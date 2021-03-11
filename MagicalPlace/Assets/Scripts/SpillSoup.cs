@@ -19,7 +19,8 @@ public class SpillSoup : MonoBehaviour
     {
         if (Mathf.Abs(Input.GetAxisRaw("Jump")) == 1 && !isRecharging)
         {
-
+            
+            
             if (Physics2D.OverlapCircle(transform.position, 0.3f, kitchenLayer))
             {
                 RestoreSoup();
@@ -31,6 +32,8 @@ public class SpillSoup : MonoBehaviour
             {
                 if (GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().soupInventory > 0)
                 {
+                    UIHelper.ShowTips("Presto !!");
+                    AudioManager.GetSingleton().PlaySound("Soup_Pour");
                     GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().soupInventory--;
                     GameObject.FindGameObjectWithTag("GameController").GetComponent<meterManager>().UpdateSoup();
                     this.GetComponent<Animator>().SetBool("pourSoup", true);

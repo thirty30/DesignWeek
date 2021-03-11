@@ -17,6 +17,7 @@ public class stageInteraction : MonoBehaviour
 
     public void InteractionDeath()
     {
+        GetComponent<Animator>().enabled = false;
         GetComponent<SpriteRenderer>().sprite = deathSprite;
         gameObject.tag = "Untagged";
     }
