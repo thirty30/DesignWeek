@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2107,10 +2107,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.12, y: 5.1299996}
+  m_Size: {x: 5.62, y: 5.128799}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!95 &2013037789
@@ -2180,10 +2180,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soup: {fileID: 2122839523547422669, guid: 8b4c071e5478be64c833b5a83188c600, type: 3}
   timerMax: 2
-  kitchenTile:
-    serializedVersion: 2
-    m_Bits: 512
-  isRecharging: 0
 --- !u!1 &2015396409
 GameObject:
   m_ObjectHideFlags: 0

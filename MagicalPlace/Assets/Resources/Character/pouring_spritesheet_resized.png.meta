@@ -1,0 +1,788 @@
+fileFormatVersion: 2
+guid: d5e6fee8838d2234bb810eb36a7eae0a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8675684858571134512
+    second: pouring_spritesheet_resized_0
+  - first:
+      213: 7047570727461404909
+    second: pouring_spritesheet_resized_1
+  - first:
+      213: 1700646250077673437
+    second: pouring_spritesheet_resized_2
+  - first:
+      213: -8757531736994069872
+    second: pouring_spritesheet_resized_3
+  - first:
+      213: 8543378299917069706
+    second: pouring_spritesheet_resized_4
+  - first:
+      213: -5101629460879256453
+    second: pouring_spritesheet_resized_5
+  - first:
+      213: -3073883821837892485
+    second: pouring_spritesheet_resized_6
+  - first:
+      213: -4909301505597253146
+    second: pouring_spritesheet_resized_7
+  - first:
+      213: 7874809465879799492
+    second: pouring_spritesheet_resized_8
+  - first:
+      213: 1270583812337258529
+    second: pouring_spritesheet_resized_9
+  - first:
+      213: -8766831338864063235
+    second: pouring_spritesheet_resized_10
+  - first:
+      213: 8596567932807872176
+    second: pouring_spritesheet_resized_11
+  - first:
+      213: 2415199822802098052
+    second: pouring_spritesheet_resized_12
+  - first:
+      213: -1324327690849945209
+    second: pouring_spritesheet_resized_13
+  - first:
+      213: -3320531237551966929
+    second: pouring_spritesheet_resized_14
+  - first:
+      213: -8811789832625883466
+    second: pouring_spritesheet_resized_15
+  - first:
+      213: -6954229461419232108
+    second: pouring_spritesheet_resized_16
+  - first:
+      213: 5032631616296105232
+    second: pouring_spritesheet_resized_17
+  - first:
+      213: -4254784462605779967
+    second: pouring_spritesheet_resized_18
+  - first:
+      213: -11002398306987640
+    second: pouring_spritesheet_resized_19
+  - first:
+      213: 3372631118843751839
+    second: pouring_spritesheet_resized_20
+  - first:
+      213: 5586028315352480696
+    second: pouring_spritesheet_resized_21
+  - first:
+      213: 3011977772542411030
+    second: pouring_spritesheet_resized_22
+  - first:
+      213: 9033233912854458057
+    second: pouring_spritesheet_resized_23
+  - first:
+      213: 414652243920251506
+    second: pouring_spritesheet_resized_24
+  - first:
+      213: 3718738193647504461
+    second: pouring_spritesheet_resized_25
+  - first:
+      213: -7762904254567534612
+    second: pouring_spritesheet_resized_26
+  - first:
+      213: 5548048012729224734
+    second: pouring_spritesheet_resized_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9e1ad3696c99780800000000000000
+      internalID: -8675684858571134512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_1
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 512
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de047cbac300ec160800000000000000
+      internalID: 7047570727461404909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_2
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 512
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7da7801c8e99710800000000000000
+      internalID: 1700646250077673437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_3
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 512
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092424bd84ff67680800000000000000
+      internalID: -8757531736994069872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_4
+      rect:
+        serializedVersion: 2
+        x: 2248
+        y: 512
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d665c8c4d209670800000000000000
+      internalID: 8543378299917069706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_5
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 512
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74df90f80f5339b0800000000000000
+      internalID: -5101629460879256453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_6
+      rect:
+        serializedVersion: 2
+        x: 3372
+        y: 512
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74488e33fe5755d0800000000000000
+      internalID: -3073883821837892485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_7
+      rect:
+        serializedVersion: 2
+        x: 3934
+        y: 512
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9d59f8a48aedbb0800000000000000
+      internalID: -4909301505597253146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_8
+      rect:
+        serializedVersion: 2
+        x: 4496
+        y: 512
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c626a79c71f84d60800000000000000
+      internalID: 7874809465879799492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_9
+      rect:
+        serializedVersion: 2
+        x: 5058
+        y: 512
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12059b7de3502a110800000000000000
+      internalID: 1270583812337258529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_10
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 512
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfcce319855f55680800000000000000
+      internalID: -8766831338864063235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_11
+      rect:
+        serializedVersion: 2
+        x: 6182
+        y: 512
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bef6820df42d4770800000000000000
+      internalID: 8596567932807872176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_12
+      rect:
+        serializedVersion: 2
+        x: 6744
+        y: 512
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48794bb4173848120800000000000000
+      internalID: 2415199822802098052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_13
+      rect:
+        serializedVersion: 2
+        x: 7306
+        y: 512
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789fca45bfa0f9de0800000000000000
+      internalID: -1324327690849945209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f257020be6a1be1d0800000000000000
+      internalID: -3320531237551966929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_15
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 0
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b67fe685db36b580800000000000000
+      internalID: -8811789832625883466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_16
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 0
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494fc81662d9d7f90800000000000000
+      internalID: -6954229461419232108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_17
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 0
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 015babe7acf77d540800000000000000
+      internalID: 5032631616296105232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_18
+      rect:
+        serializedVersion: 2
+        x: 2248
+        y: 0
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cf786f218f3f4c0800000000000000
+      internalID: -4254784462605779967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_19
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 0
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8811c358069e8dff0800000000000000
+      internalID: -11002398306987640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_20
+      rect:
+        serializedVersion: 2
+        x: 3372
+        y: 0
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d2c15322efdce20800000000000000
+      internalID: 3372631118843751839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_21
+      rect:
+        serializedVersion: 2
+        x: 3934
+        y: 0
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbbbd1282f858d40800000000000000
+      internalID: 5586028315352480696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_22
+      rect:
+        serializedVersion: 2
+        x: 4496
+        y: 0
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61143c373d1bcc920800000000000000
+      internalID: 3011977772542411030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_23
+      rect:
+        serializedVersion: 2
+        x: 5058
+        y: 0
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cea3b4326e7c5d70800000000000000
+      internalID: 9033233912854458057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_24
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 0
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a6f28d40421c500800000000000000
+      internalID: 414652243920251506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_25
+      rect:
+        serializedVersion: 2
+        x: 6182
+        y: 0
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c89053fac9b9330800000000000000
+      internalID: 3718738193647504461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_26
+      rect:
+        serializedVersion: 2
+        x: 6744
+        y: 0
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef2229c5bf944490800000000000000
+      internalID: -7762904254567534612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pouring_spritesheet_resized_27
+      rect:
+        serializedVersion: 2
+        x: 7306
+        y: 0
+        width: 562
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e8983d540aefc40800000000000000
+      internalID: 5548048012729224734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: eaa92c1d48a51764f8a87409a73ee284
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
