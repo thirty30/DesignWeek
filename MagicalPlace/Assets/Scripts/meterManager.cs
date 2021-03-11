@@ -12,7 +12,6 @@ public class meterManager : MonoBehaviour
 
     public float gameTimerMax;
     public GameObject timerText;
-    public GameObject endText;
     public GameObject globalUI;
     public GameObject player;
     private float timer;
@@ -78,9 +77,9 @@ public class meterManager : MonoBehaviour
         if (!gameActive)
         {
             timerText.SetActive(false);
-            //endText.SetActive(true);
-            //endText.GetComponent<Text>().text = ("Very Cool");
-            
+            Destroy(player);
+            Destroy(globalUI);
+
             SceneManager.LoadScene("WinScene");
         }
     }
@@ -89,11 +88,11 @@ public class meterManager : MonoBehaviour
     {
         gameActive = false;
         timerText.SetActive(false);
-        //endText.SetActive(true);
-        //endText.GetComponent<Text>().text = ("Not very cool >:(");
-        player.SetActive(false);
-        globalUI.SetActive(false);
-        SceneManager.LoadScene("WinScene");
+
+        Destroy(player);
+        Destroy(globalUI);
+
+        SceneManager.LoadScene("LoseScene");
     }
 
 
@@ -112,7 +111,8 @@ public class meterManager : MonoBehaviour
                         furnishing.GetComponent<stageInteraction>().InteractionDeath();
 
                         //meter acceleration
-                        //meterDecreaseSpeed += meterDecreaseAccel;
+                        meterDecreaseSpeed += meterDecreaseAccel;
+
                         deaths++;
                         if (deaths >= 4)
                         {
