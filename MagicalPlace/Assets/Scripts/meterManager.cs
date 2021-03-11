@@ -122,7 +122,17 @@ public class meterManager : MonoBehaviour
                 }
             }
             else
-            Player.GetSingleton().Attributes[i] = meterValues[i];
+            {
+                Player.GetSingleton().Attributes[i] = meterValues[i];
+
+                foreach (GameObject furnishing in (GameObject.FindGameObjectsWithTag("Interactable")))
+                {
+                    if (furnishing.GetComponent<stageInteraction>().furnitureID == i)
+                    {
+                        furnishing.GetComponent<stageInteraction>().ChangeExpression(meterValues[i]);
+                    }
+                }
+            }
             
         }
     }
