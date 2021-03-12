@@ -80,6 +80,9 @@ public class meterManager : MonoBehaviour
             Destroy(player);
             Destroy(globalUI);
 
+
+            AudioManager.GetSingleton().PlaySound("Door_Knock");
+
             SceneManager.LoadScene("WinScene");
         }
     }
@@ -91,6 +94,8 @@ public class meterManager : MonoBehaviour
 
         Destroy(player);
         Destroy(globalUI);
+
+        AudioManager.GetSingleton().PlaySound("Door_Knock");
 
         SceneManager.LoadScene("LoseScene");
     }
