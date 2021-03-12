@@ -62,6 +62,8 @@ public class GridMovement : MonoBehaviour
 
     void SetNewMoveLocation()
     {
+        //AudioManager.GetSingleton().PlaySound("Walk_2");
+
         moveToPoint = new Vector2(transform.position.x + Input.GetAxisRaw("Horizontal") * moveDistance, transform.position.y + Input.GetAxisRaw("Vertical") * moveDistance);
 
         if (!Physics2D.OverlapCircle(moveToPoint, 0.2f, obstacleLayer))
