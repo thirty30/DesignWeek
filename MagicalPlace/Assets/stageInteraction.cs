@@ -22,6 +22,11 @@ public class stageInteraction : MonoBehaviour
     {
         GetComponent<Animator>().enabled = false;
         GetComponent<SpriteRenderer>().sprite = deathSprite;
+        foreach (Transform child in transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+
         gameObject.tag = "Untagged";
     }
 
