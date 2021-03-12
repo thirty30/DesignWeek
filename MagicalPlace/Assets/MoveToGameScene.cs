@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MoveToGameScene : MonoBehaviour
 {
+    public string sceneName;
     private void FixedUpdate()
     {
         if (Mathf.Abs(Input.GetAxisRaw("Jump")) == 1)
@@ -14,6 +15,6 @@ public class MoveToGameScene : MonoBehaviour
     }
     public void ChangeScene()
     {
-        SceneManager.LoadScene("InteractablesTest");
+        SceneManager.LoadScene(sceneName);
     }
 }
