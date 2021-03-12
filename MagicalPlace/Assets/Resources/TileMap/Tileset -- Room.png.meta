@@ -133,7 +133,7 @@ TextureImporter:
     second: Tileset -- Room_42
   - first:
       213: 4228419602323882307
-    second: stovetop_active
+    second: Tileset -- Room_43
   - first:
       213: -5395842591195206937
     second: Tileset -- Room_44
@@ -160,7 +160,7 @@ TextureImporter:
     second: Tileset -- Room_51
   - first:
       213: 597359251063249056
-    second: stovetop_regular
+    second: Tileset -- Room_52
   - first:
       213: 2241911050962358311
     second: Tileset -- Room_53
@@ -462,7 +462,7 @@ TextureImporter:
         x: 448
         y: 704
         width: 64
-        height: 128
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -482,8 +482,8 @@ TextureImporter:
         serializedVersion: 2
         x: 512
         y: 704
-        width: 128
-        height: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -756,7 +756,7 @@ TextureImporter:
         x: 384
         y: 576
         width: 64
-        height: 128
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -777,7 +777,7 @@ TextureImporter:
         x: 448
         y: 576
         width: 64
-        height: 128
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -795,9 +795,9 @@ TextureImporter:
       name: Tileset -- Room_32
       rect:
         serializedVersion: 2
-        x: 512
+        x: 576
         y: 576
-        width: 128
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -939,15 +939,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stovetop_active
+      name: Tileset -- Room_43
       rect:
         serializedVersion: 2
         x: 0
         y: 384
         width: 256
         height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -981,15 +981,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stovetop_regular
+      name: Tileset -- Room_52
       rect:
         serializedVersion: 2
         x: 0
         y: 256
         width: 256
         height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -997,6 +997,153 @@ TextureImporter:
       bones: []
       spriteID: 0a81beae21f3a4800800000000000000
       internalID: 597359251063249056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset -- Room_3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b8bef451df84230800000000000000
+      internalID: 3623424168196541342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset -- Room_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b723a8244186ec0800000000000000
+      internalID: -3573584028299527413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset -- Room_5
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01eebcbf7400cb480800000000000000
+      internalID: -8882224055914336752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset -- Room_14
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43eb93a5b66d7f10800000000000000
+      internalID: 2269082717584614221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset -- Room_21
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3497da72572980870800000000000000
+      internalID: 8649324116239546691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset -- Room_22
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5225fdaf19ffa7660800000000000000
+      internalID: 7384495541471629861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset -- Room_31
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a4149c1ea972eb0800000000000000
+      internalID: -4744653387876709763
       vertices: []
       indices: 
       edges: []
